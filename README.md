@@ -18,7 +18,7 @@ Installation
 
 Just type the following to install the program and its dependencies:
 
-    $ go get github.com/boumenot/gocover-cobertura
+    $ go get github.com/embrace-io/gocover-cobertura@master
 
 Usage
 -----
@@ -27,7 +27,11 @@ Usage
 
     $ go test -coverprofile=coverage.txt -covermode count github.com/gorilla/mux
     $ gocover-cobertura < coverage.txt > coverage.xml
-    
+
+or
+
+    $ go run github.com/embrace-io/gocover-cobertura < coverage.txt > coverage.xml
+
 Note that you should run this from the directory which holds your `go.mod` file.
 
 Some flags can be passed (each flag should only be used once):
